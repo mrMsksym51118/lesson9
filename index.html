@@ -20,13 +20,28 @@
             background-color: blue;
             width: 40px;
             height: 40px;
-            float: right;
+            float: left;
+            margin: 20px 20px;
         }        
         .header .nav {
             background-color: red;
             width: 40px;
             height: 40px;
-            float: left;
+            float: right;
+            margin: 20px 20px;
+            
+        }
+        .header .section {
+            display: table;
+            float: right;
+            margin: 20px 20px;
+        }
+        .header .section .wrap {
+            background-color: red;
+            width: 40px;
+            height: 40px;
+            display: table-cell;
+            
         }
     </style>
 </head>
@@ -34,6 +49,16 @@
     <div class="header">
         <div class="logo"></div>
         <div class="nav"></div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="header">
+        <div class="logo"></div>
+        <div class="section">
+            <div class="wrap">1</div>
+            <div class="wrap">2</div>
+            <div class="wrap">3</div>
+            <div class="wrap">4</div>
+        </div>
         <div class="clearfix"></div>
     </div>
     
