@@ -14,8 +14,7 @@
             clear: both;
         }
         .header {
-            background-color: green;
-            position: relative;
+            background-color: green;            
         }
         .header .logo {
             background-color: blue;
@@ -24,37 +23,33 @@
             float: left;
             margin: 20px 20px;
         }        
-        .header .nav {
+        .header .wraper {
             background-color: red;
             width: 40px;
             height: 40px;
             float: right;
             margin: 20px 20px;
             
+            
         }
-        .header .section {
-            display: table;
+        .header .section {            
             float: right;
-            margin: 20px 20px;
+            
         }
-        .header .section .wrap {
+        .header .section .wraper {
             background-color: red;
             width: 40px;
-            height: 40px;
-            display: table-cell;                           
+            height: 40px;                                      
         }
         .header .section-left {
             float: left;
         }
         .header .section-right {
             float: right;
-            display: table;
-        }
-        .header .section-right .nav {
-            display: table-cell;
-        }
+            
+        }        
         .header .section-div {
-            margin-left: 473px;
+            margin-left: 446px;
         }
         .header .section-div .section-single {
             width: 60px;
@@ -77,23 +72,49 @@
             background-color: red;
             width: 50px;
             height: 20px;           
-           margin: 10px;
+            margin: 10px;
+        }
+        .header .section-one {
+            float: left;  
+            margin-left: 815px;          
+        }
+        .header .section-one .section-big {
+            background-color: blue;
+            width: 60px;
+            height: 60px;
+        }
+        .header .section-two {
+            float: right;
+            margin-top: -5px;
+
+        }
+        .header .section-two-top {
+            background-color: red;
+            width: 50px;
+            height: 20px;           
+            margin: 10px;
+        }
+        .header .section-two-bottom {
+            background-color: red;
+            width: 50px;
+            height: 20px;           
+            margin: 10px;
         }
     </style>
 </head>
 <body>
     <div class="header">
         <div class="logo"></div>
-        <div class="nav"></div>
+        <div class="wraper"></div>
         <div class="clearfix"></div>
     </div>
     <div class="header">
         <div class="logo"></div>
         <div class="section">
-            <div class="wrap">1</div>
-            <div class="wrap">2</div>
-            <div class="wrap">3</div>
-            <div class="wrap">4</div>
+            <div class="wraper">1</div>
+            <div class="wraper">2</div>
+            <div class="wraper">3</div>
+            <div class="wraper">4</div>
         </div>
         <div class="clearfix"></div>
     </div>
@@ -103,8 +124,8 @@
             <div class="logo">2</div>
         </div>
         <div class="section-right">
-            <div class="nav">3</div>
-            <div class="nav">4</div>
+            <div class="wraper">3</div>
+            <div class="wraper">4</div>
         </div>    
         <div class="clearfix"></div>
     </div>
@@ -118,6 +139,15 @@
         </div>
         <div class="clearfix"></div>
     </div>
-    
+    <div class="header">        
+            <div class="section-one">
+                <div class="section-big"></div>
+            </div>
+            <div class="section-two">
+                <div class="section-two-top"></div>
+                <div class="section-two-bottom"></div>            
+            </div>         
+        <div class="clearfix"></div>
+    </div>    
 </body>
 </html>
