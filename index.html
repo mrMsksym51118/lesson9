@@ -15,6 +15,7 @@
         }
         .header {
             background-color: green;
+            position: relative;
         }
         .header .logo {
             background-color: blue;
@@ -40,8 +41,43 @@
             background-color: red;
             width: 40px;
             height: 40px;
+            display: table-cell;                           
+        }
+        .header .section-left {
+            float: left;
+        }
+        .header .section-right {
+            float: right;
+            display: table;
+        }
+        .header .section-right .nav {
             display: table-cell;
+        }
+        .header .section-div {
+            margin-left: 473px;
+        }
+        .header .section-div .section-single {
+            width: 60px;
+            height: 60px;
+            background-color: blue;
+            float: left;
+            margin: 5px;
+        }
+        .header .section-multiple {
+            float: left;
+        }
+        .header .section-multiple .section-multiple-top {
+            background-color: red;
+            width: 50px;
+            height: 20px;
+            margin: 10px;
             
+        }
+        .header .section-multiple .section-multiple-bottom {
+            background-color: red;
+            width: 50px;
+            height: 20px;           
+           margin: 10px;
         }
     </style>
 </head>
@@ -58,6 +94,27 @@
             <div class="wrap">2</div>
             <div class="wrap">3</div>
             <div class="wrap">4</div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="header">
+        <div class="section-left">
+            <div class="logo">1</div>
+            <div class="logo">2</div>
+        </div>
+        <div class="section-right">
+            <div class="nav">3</div>
+            <div class="nav">4</div>
+        </div>    
+        <div class="clearfix"></div>
+    </div>
+    <div class="header">
+        <div class="section-div">
+            <div class="section-single"></div>
+        </div>
+        <div class="section-multiple">
+            <div class="section-multiple-top"></div>
+            <div class="section-multiple-bottom"></div>
         </div>
         <div class="clearfix"></div>
     </div>
