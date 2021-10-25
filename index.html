@@ -13,158 +13,208 @@
         }
         .clearfix {
             clear: both;
-        }                     
-        .first .logo {
+        }        
+
+
+        
+        .first {
+            border: 1px solid black;
+            padding: 5px;
+            margin: 5px;
+        }             
+        .first .left {
             background-color: blue;
             width: 40px;
             height: 40px;
-            float: left;
-            margin: 20px 20px;
+            float: left;           
         }       
-        .first .wraper {
+        .first .right {
             background-color: red;
             width: 40px;
-            height: 40px;           
-            margin: 20px 20px;
+            height: 40px;      
             float: right;
         } 
-        .second  .section .wraper {
-            background-color: red;
+
+
+
+        .second {
+            border: 1px solid black;            
+            padding: 5px;
+            margin: 5px;
+        }
+        .second .left {
+            float: left;
+        }
+        .second .left .item {
+            background-color: blue;
             width: 40px;
-            height: 40px;           
-            margin: 20px 20px;                     
+            height: 40px;
         }
-        .second .section {
+        .second .right {
             float: right;
-            display: flex;
         }
-       .second .logo {
-        background-color: blue;
+        .second .right .item {
+            background-color: red;
             width: 40px;
             height: 40px;
             float: left;
-            margin: 20px 20px;
-       }        
-        .third .section-left {
-            float: left;  
-            display: flex;          
-            
+            margin-left: 5px;
         }
-        .third .section-left .logo {
+
+
+
+         .third {
+            border: 1px solid black;
+            margin: 5px;
+            }
+        .third .left {
+            float: left;
+        }
+        .third .left .item {
             background-color: blue;
             width: 40px;
-            height: 40px; 
-            margin: 20px 20px;
+            height: 40px;
+            float: left;
+            margin: 5px;
+        
         }
-        .third .section-right {
-            float: right;   
-            display: flex;       
-        }        
-        .third .section-right .wraper {
+        .third .right {
+            float: right;
+        }
+        .third .right .item {
             background-color: red;
             width: 40px;
-            height: 40px; 
-            margin: 20px 20px;
-        }
-        .fourth .section-div {
-            margin-left: 446px;
-        }
-        .fourth .section-div .section-single {
-            width: 60px;
-            height: 60px;
-            background-color: blue;
+            height: 40px;
             float: left;
             margin: 5px;
         }
-        .fourth .section-multiple {
-            float: left;
-        }
-        .fourth .section-multiple .section-multiple-top {
-            background-color: red;
-            width: 50px;
-            height: 20px;
-            margin: 10px;
-            
-        }
-        .fourth .section-multiple .section-multiple-bottom {
-            background-color: red;
-            width: 50px;
-            height: 20px;           
-            margin: 10px;
-        }
-        .fifth .section-one {
-            float: left;  
-            margin-left: 799px;          
-        }
-        .fifth .section-one .section-big {
-            background-color: blue;
-            width: 60px;
-            height: 60px;
-        }
-        .fifth .section-two {
-            float: right;
-            margin-top: -5px;
 
+
+
+        .fourth {
+            border: 1px solid black;
+            padding: 5px;
+            margin: 5px;
         }
-        .fifth .section-two-top {
+        .fourth .wrapper {
+            width: 160px;
+            height: 85px;
+            margin: 0 auto;   
+        }
+        .fourth .wrapper .section-one {
+            float: left;  
+        }
+        .fourth .wrapper .section-one .item {
+            background-color: blue;
+            width: 85px;
+            height: 85px;
+        }
+        .fourth .wrapper .section-two {    	
+            width: 70px;
+            height: 70px;
+            float: right;       
+        }
+        .fourth .wrapper .section-two .item {
             background-color: red;
-            width: 50px;
-            height: 20px;           
-            margin: 10px;
+            width: 70px;
+            height: 40px; 
+            margin: 0 0 5px 0;   
         }
-        .fifth .section-two-bottom {
-            background-color: red;
-            width: 50px;
-            height: 20px;           
-            margin: 10px;
+
+
+    .fifth {
+    	border: 1px solid black;
+        padding: 5px;
+        margin: 5px;
+    }
+    .fifth .wrapper {         
+        width: 160px;
+        height: 85px;
+       	float: right;       
         }
+    .fifth .wrapper .section-one {
+    	float: left;       
+    }
+    .fifth .wrapper .section-one .item {
+    	background-color: blue;
+        width: 85px;
+        height: 85px;        
+    }
+    .fifth .wrapper .section-two {
+    	float: right;                       
+    }
+    .fifth .wrapper .section-two .item {
+    	background-color: red;
+        width: 70px;
+        height: 40px; 
+        margin: 0 0 5px 0;
+    }        
+        
     </style>
 </head>
 <body>
     <div class="first">
-        <div class="logo"></div>
-        <div class="wraper"></div>
+        <div class="left"></div>
+        <div class="right"></div>
         <div class="clearfix"></div>
     </div>
+
+
+
     <div class="second">
-        <div class="logo"></div>
-        <div class="section">
-            <div class="wraper">1</div>
-            <div class="wraper">2</div>
-            <div class="wraper">3</div>
-            <div class="wraper">4</div>
+        <div class="left">
+            <div class="item"></div>
+        </div>
+        <div class="right">
+            <div class="item">1</div>
+          <div class="item">2</div>
+          <div class="item">3</div>
+          <div class="item">4</div>
         </div>
         <div class="clearfix"></div>
-    </div>
+      </div>
+
+
+
     <div class="third">
-        <div class="section-left">
-            <div class="logo">1</div>
-            <div class="logo">2</div>
+        <div class="left">
+            <div class="item">1</div>
+            <div class="item">2</div>
         </div>
-        <div class="section-right">
-            <div class="wraper">3</div>
-            <div class="wraper">4</div>
+        <div class="right">
+            <div class="item">3</div>
+            <div class="item">4</div>
         </div>    
         <div class="clearfix"></div>
     </div>
+
+
+
     <div class="fourth">
-        <div class="section-div">
-            <div class="section-single"></div>
-        </div>
-        <div class="section-multiple">
-            <div class="section-multiple-top"></div>
-            <div class="section-multiple-bottom"></div>
-        </div>
-        <div class="clearfix"></div>
-    </div>
-    <div class="fifth">        
+    	<div class="wrapper">
+          <div class="section-one">
+              <div class="item"></div>
+          </div>
+          <div class="section-two">
+              <div class="item"></div>
+              <div class="item"></div>
+          </div>
+          <div class="clearfix"></div>
+        </div>      	
+    </div>   
+
+
+
+    <div class="fifth"> 
+        <div class="wrapper">       
             <div class="section-one">
-                <div class="section-big"></div>
+                <div class="item"></div>
             </div>
             <div class="section-two">
-                <div class="section-two-top"></div>
-                <div class="section-two-bottom"></div>            
-            </div>         
+                <div class="item"></div>
+                <div class="item"></div>            
+            </div>            
+        </div>
         <div class="clearfix"></div>
     </div>    
 </body>
